@@ -1,0 +1,206 @@
+/* Readable operational text at real device scale. */
+.workspace .page-title p {
+  font-size: 12px;
+}
+.workspace .sidebar-link {
+  font-size: 12px;
+}
+.workspace .store-identity strong {
+  font-size: 12px;
+}
+.workspace .store-identity small {
+  font-size: 10px;
+}
+.workspace .banner-chip {
+  font-size: 11px;
+}
+.workspace .welcome-banner p {
+  font-size: 12px;
+}
+.workspace .banner-link {
+  font-size: 11px;
+}
+.workspace .metric > div > span {
+  font-size: 11px;
+}
+.workspace .metric > small {
+  font-size: 11px;
+}
+.workspace .panel-heading p {
+  font-size: 11px;
+}
+.workspace .panel-heading > a {
+  font-size: 11px;
+}
+.workspace .setup-panel li > a {
+  font-size: 12px;
+}
+.workspace .setup-tip strong {
+  font-size: 12px;
+}
+.workspace .setup-tip p {
+  font-size: 11px;
+}
+.workspace .workspace-note {
+  font-size: 11px;
+}
+.workspace td {
+  font-size: 12px;
+}
+.workspace th {
+  font-size: 11px;
+}
+.workspace td strong {
+  font-size: 12px;
+}
+.workspace td small {
+  font-size: 10px;
+}
+.workspace .status {
+  font-size: 11px;
+}
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+}
+@media (max-width: 700px) {
+  .hero-copy > p {
+    font-size: 14px;
+  }
+  .hero-assurance {
+    font-size: 10px;
+  }
+  .section-heading p,
+  .feature-row p {
+    font-size: 13px;
+  }
+  .feature-copy p {
+    font-size: 14px;
+  }
+  .plan > p,
+  .plan li {
+    font-size: 12px;
+  }
+  .auth-form-section > p {
+    font-size: 13px;
+  }
+  .workspace .welcome-banner p {
+    max-width: 200px;
+    font-size: 11px;
+  }
+  .workspace .banner-chip {
+    font-size: 10px;
+  }
+  .workspace .banner-link {
+    font-size: 10px;
+  }
+  .workspace .page-title p {
+    font-size: 11px;
+  }
+  .workspace .title-actions .button {
+    font-size: 11px;
+  }
+  .workspace .metric > div > span {
+    font-size: 10px;
+  }
+  .workspace .metric > small {
+    font-size: 10px;
+  }
+  .workspace .setup-panel li > a {
+    font-size: 12px;
+  }
+  .workspace .mobile-bottom-nav > a {
+    font-size: 10px;
+  }
+  .shop-hero p {
+    font-size: 12px;
+  }
+  .shop-product-info h2 {
+    font-size: 13px;
+  }
+  .shop-product-info small {
+    font-size: 11px;
+  }
+  .shop-product-info strong {
+    font-size: 13px;
+  }
+  .shop-footer p {
+    font-size: 12px;
+  }
+  .shop-footer h3 {
+    font-size: 14px;
+  }
+  .product-description {
+    font-size: 14px;
+  }
+  .product-availability,
+  .product-promises span {
+    font-size: 12px;
+  }
+  .product-policy p {
+    font-size: 12px;
+  }
+  .checkout-form > .checkbox-row {
+    font-size: 12px;
+  }
+  .receipt-page > p {
+    font-size: 13px;
+  }
+  .receipt-card > small {
+    font-size: 12px;
+  }
+}
+
+.upload-box label:focus-within,
+.store-logo-upload label:focus-within {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+@media (max-width: 700px) {
+  .icon-button,
+  .quantity-control > button,
+  .cart-line-controls .quantity-control > button {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  .quantity-control > button,
+  .cart-line-controls .quantity-control > button {
+    width: 44px;
+    height: 44px;
+  }
+  .cart-line {
+    flex-wrap: wrap;
+  }
+  .cart-line > div:not(.cart-line-controls) {
+    flex: 1;
+    min-width: 0;
+  }
+  .cart-line-controls {
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .shop-brand {
+    min-width: 0;
+    flex: 1;
+  }
+  .shop-brand strong {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
+  }
+  .category-tabs button,
+  .tab-list button {
+    min-height: 44px;
+  }
+}
+@media (max-width: 360px) {
+  .breadcrumb strong {
+    max-width: 80px;
+  }
+  .shop-nav {
+    gap: 12px;
+  }
+}

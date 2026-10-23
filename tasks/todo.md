@@ -1,0 +1,7 @@
+- [x] Foundation and database migration run locally
+- [x] Auth and tenant isolation verified
+- [x] Products/variants/uploads and delivery settings work
+- [x] Orders reserve stock atomically, deduplicate and track history
+- [x] Subscription server permissions verified
+- [x] RTL marketing, merchant and storefront work on phone and desktop
+- [x] Build, tests, browser QA, screenshots and documentation complete

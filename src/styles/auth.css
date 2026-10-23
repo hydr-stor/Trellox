@@ -1,0 +1,124 @@
+/* Identity */
+.auth-page {
+  min-height: 100dvh;
+  padding: 32px 5vw 55px;
+}
+.auth-page > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1320px;
+  margin: auto;
+}
+.auth-layout {
+  max-width: 1130px;
+  display: grid;
+  grid-template-columns: 1fr 0.95fr;
+  gap: 9%;
+  align-items: center;
+  margin: 45px auto 0;
+}
+.auth-form-section {
+  max-width: 455px;
+  width: 100%;
+  margin: auto;
+}
+.auth-form-section h1 {
+  font-size: 31px;
+  letter-spacing: -0.5px;
+}
+.auth-form-section > p {
+  font-size: 12px;
+  margin: 8px 0 28px;
+}
+.auth-form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.auth-form-section .form-note {
+  font-size: 10px;
+  color: var(--muted);
+  text-align: center;
+  line-height: 2;
+}
+.password-field {
+  position: relative;
+}
+.password-field input {
+  padding-inline-start: 44px;
+}
+.password-field button {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+}
+.auth-switch {
+  text-align: center;
+  margin-top: 25px !important;
+}
+.auth-switch a {
+  color: var(--ink);
+  font-weight: 600;
+  margin-inline-start: 7px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.auth-story {
+  min-height: 620px;
+  background: #244b3b;
+  border-radius: 180px 180px 14px 14px;
+  color: #f2f1e7;
+  position: relative;
+  overflow: hidden;
+  padding: 74px 45px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.auth-story h2 {
+  font-size: 40px;
+  line-height: 1.8;
+  z-index: 1;
+  letter-spacing: -0.6px;
+}
+.auth-story > p {
+  color: #b6cbbb;
+  line-height: 2.2;
+  font-size: 13px;
+  margin-top: 15px;
+  z-index: 1;
+}
+.auth-story-mark {
+  position: absolute;
+  top: 47px;
+  right: 45px;
+  font-size: 35px;
+  color: #a7bda5;
+}
+.auth-story-bottom {
+  display: flex;
+  gap: 18px;
+  font-size: 9px;
+  color: #c4d4c2;
+  margin-top: 55px;
+  z-index: 1;
+}
+.auth-story-bottom span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.auth-story-bottom svg {
+  width: 12px;
+}
+.auth-arch {
+  position: absolute;
+  width: 255px;
+  height: 430px;
+  left: -30px;
+  top: 82px;
+  border: 1px solid #8aa58044;
+  border-radius: 180px 180px 0 0;
+  transform: rotate(-23deg);
+}

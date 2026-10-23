@@ -1,0 +1,21 @@
+{
+  "checks": [
+    "Marketing desktop/mobile; no horizontal overflow",
+    "Registration, session and protected merchant route",
+    "Merchant creates a product with image and variant via UI",
+    "Guest cart/checkout/COD confirmation without account",
+    "Merchant receives real order and changes status",
+    "Plan request persists without fake payment or entitlement grant",
+    "Light/dark, RTL, reduced motion, screenshots at 390 and 1440, zero page errors",
+    "320/375px and landscape overflow checks; sidebar Escape/inert and native dialog Escape verified"
+  ],
+  "date": "2026-10-23T23:25:13.186Z",
+  "screenshots": "docs/previews",
+  "boundaryWidths": [
+    320,
+    375,
+    390,
+    844,
+    1440
+  ]
+}

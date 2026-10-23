@@ -1,0 +1,1 @@
+Local test fixture only. linen-shirt.webp is an AI-generated example product photograph created for this independent project and optimized locally. Not a real merchant product or commercial listing. Seed is opt-in and only targets the local Worker; do not import fixture data into production.
