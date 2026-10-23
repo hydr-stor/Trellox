@@ -2,7 +2,8 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import { brand } from "./shared/brand";
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
+  base: mode === "pages" ? process.env.PAGES_BASE_PATH || "/Trellox/" : "/",
   plugins: [
     react(),
     tailwindcss(),
@@ -13,5 +14,8 @@ export default defineConfig({
     },
   ],
   server: { port: 5173, proxy: { "/api": "http://127.0.0.1:8787" } },
-  build: { outDir: "dist/client", chunkSizeWarningLimit: 600 },
-});
+  build: {
+    outDir: mode === "pages" ? "dist/pages" : "dist/client",
+    chunkSizeWarningLimit: 600,
+  },
+}));

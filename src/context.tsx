@@ -6,6 +6,7 @@ import {
   type ReactNode,
 } from "react";
 import { api } from "./api";
+import { isStaticPreview } from "./build-mode";
 import type { Profile } from "./types";
 const Auth = createContext<{
   profile: Profile | null;
@@ -16,6 +17,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [profile, setProfile] = useState<Profile | null>(null),
     [loading, setLoading] = useState(true);
   async function refresh() {
+    if (isStaticPreview) {
+      setProfile(null);
+      setLoading(false);
+      return;
+    }
     try {
       setProfile(await api<Profile>("/auth/me"));
     } catch {

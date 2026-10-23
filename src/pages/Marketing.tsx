@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   ArrowLeft,
   ArrowUpLeft,
@@ -14,7 +14,7 @@ import {
   MapPin,
   Plus,
 } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Logo, ThemeToggle, Reveal, Arrow } from "../components/ui";
 import { brand, plans } from "../../shared/brand";
 function Navigation() {
@@ -23,12 +23,12 @@ function Navigation() {
     <nav className="marketing-nav wrap" aria-label="التنقل الرئيسي">
       <Logo />
       <div className={`nav-links ${open ? "open" : ""}`}>
-        <a href="/#experience" onClick={() => setOpen(false)}>
+        <Link to="/#experience" onClick={() => setOpen(false)}>
           التجربة
-        </a>
-        <a href="/#features" onClick={() => setOpen(false)}>
+        </Link>
+        <Link to="/#features" onClick={() => setOpen(false)}>
           كل ما تحتاجه
-        </a>
+        </Link>
         <Link to="/pricing" onClick={() => setOpen(false)}>
           الاشتراكات
         </Link>
@@ -145,6 +145,17 @@ function Plans() {
   );
 }
 export default function Marketing({ pricing = false }: { pricing?: boolean }) {
+  const { hash } = useLocation();
+  useEffect(() => {
+    if (hash) {
+      const section = document.getElementById(hash.slice(1));
+      section?.scrollIntoView({
+        behavior: matchMedia("(prefers-reduced-motion: reduce)").matches
+          ? "auto"
+          : "smooth",
+      });
+    }
+  }, [hash, pricing]);
   return (
     <div className="marketing">
       <Navigation />
@@ -176,9 +187,9 @@ export default function Marketing({ pricing = false }: { pricing?: boolean }) {
                   <Link to="/register" className="button large">
                     افتح متجرك <ArrowUpLeft size={21} />
                   </Link>
-                  <a href="#experience" className="text-link">
+                  <Link to="/#experience" className="text-link">
                     شوف شلون يشتغل <ArrowLeft size={18} />
-                  </a>
+                  </Link>
                 </div>
                 <div className="hero-assurance">
                   <span>

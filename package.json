@@ -15,7 +15,9 @@
     "build": "npm run typecheck && vite build && node scripts/worker.mjs deploy --dry-run --outdir dist/worker",
     "test": "esbuild server/index.ts --bundle --format=esm --platform=browser --outfile=.test-worker/index.js && vitest run",
     "test:browser": "node tests/browser.mjs",
-    "test:boundaries": "node tests/boundaries.mjs"
+    "test:boundaries": "node tests/boundaries.mjs",
+    "build:pages": "npm run typecheck && node scripts/build-pages.mjs",
+    "test:pages": "node tests/pages.mjs"
   },
   "dependencies": {
     "@noble/hashes": "^2.0.1",
